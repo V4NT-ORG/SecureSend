@@ -71,7 +71,7 @@
     "@mattiasbuelens/web-streams-polyfill": "0.2.1",
     "@sentry/browser": "^7.69.0",
     "asmcrypto.js": "^2.3.2",
-    "babel-loader": "^8.2.4",
+    "babel-loader": "^9.2.1",
     "babel-plugin-istanbul": "^6.1.1",
     "base64-js": "^1.5.1",
     "content-disposition": "^0.5.4",
