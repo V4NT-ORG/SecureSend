@@ -29,7 +29,7 @@ export default class Keychain {
         secretKey,
         {
           name: 'AES-GCM',
-          length: 128
+          length: 256
         },
         false,
         ['encrypt', 'decrypt']
@@ -125,7 +125,7 @@ export default class Keychain {
       {
         name: 'AES-GCM',
         iv: new Uint8Array(12),
-        tagLength: 128
+        tagLength: 256
       },
       metaKey,
       encoder.encode(
@@ -154,7 +154,7 @@ export default class Keychain {
       {
         name: 'AES-GCM',
         iv: new Uint8Array(12),
-        tagLength: 128
+        tagLength: 256
       },
       metaKey,
       ciphertext
