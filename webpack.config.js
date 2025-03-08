@@ -6,6 +6,13 @@ const VersionPlugin = require('./build/version_plugin');
 const AndroidIndexPlugin = require('./build/android_index_plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
+// Fix for node 18+
+ // See: <https://stackoverflow.com/a/78005686/1000145>
+ const crypto = require('crypto');
+ const crypto_orig_createHash = crypto.createHash;
+ crypto.createHash = algorithm =>
+   crypto_orig_createHash(algorithm == 'md4' ? 'sha256' : algorithm);
+
 const webJsOptions = {
   babelrc: false,
   presets: [
