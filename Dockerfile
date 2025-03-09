@@ -1,6 +1,6 @@
 # Build project
 # Check for latest node and keep it up to date: https://hub.docker.com/_/node/
-FROM node:22.3.0-alpine3.19 AS build
+FROM node:23.3.0-alpine3.19 AS build
 RUN set -x \
   # Change node uid/gid
   && apk --no-cache add shadow \
@@ -23,7 +23,7 @@ RUN set -x \
     && PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npm ci \
     && npm run build
 # Main image
-FROM node:22.3.0-alpine3.19
+FROM node:23.3.0-alpine3.19
 RUN set -x \
   # Change node uid/gid
   && apk --no-cache add shadow \
