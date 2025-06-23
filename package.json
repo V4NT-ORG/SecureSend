@@ -105,7 +105,7 @@
     "nanotiming": "^7.3.1",
     "npm-run-all": "^4.1.5",
     "nyc": "^15.1.0",
-    "postcss": "^8.4.45",
+    "postcss": "^8.4.46",
     "postcss-loader": "^4.2.0",
     "postcss-preset-env": "^7.7.2",
     "prettier": "^1.19.1",
@@ -126,7 +126,7 @@
     "webpack": "5.97.1",
     "webpack-cli": "^4.10.0",
     "webpack-dev-middleware": "^6.1.2",
-    "webpack-dev-server": "^4.15.1",
+    "webpack-dev-server": "^5.2.1",
     "webpack-manifest-plugin": "^2.2.0",
     "webpack-unassert-loader": "^1.2.0"
   },
