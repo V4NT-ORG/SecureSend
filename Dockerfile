@@ -1,6 +1,6 @@
 # Build project
 # Check for latest node and keep it up to date: https://hub.docker.com/_/node/
-FROM node:23.3.0-alpine3.19 AS build
+FROM node:24.4.1-alpine3.21 AS build
 RUN set -x \
   # Change node uid/gid
   && apk --no-cache add shadow \
