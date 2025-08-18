@@ -1,5 +1,5 @@
 # ARMv8 build stage
-FROM arm64v8/node:24.4.1-alpine3.21 AS build
+FROM arm64v8/node:24.6.0-alpine3.21 AS build
 RUN set -x \
   && apk --no-cache add shadow \
   && groupmod -g 1001 node \
@@ -20,7 +20,7 @@ RUN set -x \
   && npm run build
 
 # ARMv8 production image
-FROM arm64v8/node:24.4.1-alpine3.21
+FROM arm64v8/node:24.6.0-alpine3.21
 RUN set -x \
   && apk --no-cache add shadow \
   && groupmod -g 1001 node \
