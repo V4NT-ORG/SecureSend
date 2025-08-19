@@ -705,7 +705,7 @@ located in the `ios/app/src/main/assets` directory.
 
 ## Encryption
 
-SecureSend uses 256-bit AES-GCM encryption via the [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API) to encrypt files in the browser before uploading them to the server. The code is in [app/keychain.js](../app/keychain.js).
+SecureSend uses 256-bit AES-GCM encryption via the [Web Crypto API](https://archive.is/BWjSu) to encrypt files in the browser before uploading them to the server. The code is in [app/keychain.js](https://github.com/V4NT-ORG/SecureSend/blob/main/app/keychain.js).
 
 ## Steps
 
