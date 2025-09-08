@@ -4,31 +4,15 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "pip"
-    directory: "/"
-    schedule:
-      interval: "daily"
   - package-ecosystem: "docker"
     directory: "/"
     schedule:
       interval: "daily"
-  - package-ecosystem: "maven"
+  - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
   - package-ecosystem: "gradle"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "nuget"
-    directory: "/"
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "composer"
     directory: "/"
     schedule:
       interval: "daily"
